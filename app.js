@@ -8,7 +8,7 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/views/index.html');
 });
 
-app.get('/api/whaomi',(req,res)=>{
+app.get('/api/whoami',(req,res)=>{
     res.json({
         "ipaddress":req.ip,
         "language":req.headers['accept-language'],
